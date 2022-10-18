@@ -37,6 +37,8 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import twitch from "../assets/twitch.png";
 import mern from "../assets/Mern-Stack-Program.png";
+import frontend from "../assets/frontend.png";
+import backend from "../assets/backend.png";
 
 // eslint-disable-next-line
 export default {
@@ -76,4 +78,6 @@ export default {
   spotify,
   twitch,
   mern,
+  frontend,
+  backend,
 };

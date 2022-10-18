@@ -13,12 +13,12 @@ const abouts = [
   {
     title: "Frontend Developer",
     description: "I am a good frontend developer.",
-    imgUrl: images.about02,
+    imgUrl: images.frontend,
   },
   {
     title: "Backend Developer",
     description: "I am a good backend developer.",
-    imgUrl: images.about03,
+    imgUrl: images.backend,
   },
   {
     title: "Twitch Streamer",
