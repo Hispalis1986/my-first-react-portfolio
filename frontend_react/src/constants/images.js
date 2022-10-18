@@ -22,6 +22,7 @@ import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
+import about05 from "../assets/about05.png";
 
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
@@ -34,6 +35,8 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import twitch from "../assets/twitch.png";
+import mern from "../assets/Mern-Stack-Program.png";
 
 // eslint-disable-next-line
 export default {
@@ -60,6 +63,7 @@ export default {
   about02,
   about03,
   about04,
+  about05,
   profile,
   circle,
   logo,
@@ -70,4 +74,6 @@ export default {
   nb,
   skype,
   spotify,
+  twitch,
+  mern,
 };

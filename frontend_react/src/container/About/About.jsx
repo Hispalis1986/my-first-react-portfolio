@@ -8,7 +8,7 @@ const abouts = [
   {
     title: "MERN Stack",
     description: "I am a good MERN stack.",
-    imgUrl: images.about01,
+    imgUrl: images.mern,
   },
   {
     title: "Frontend Developer",
@@ -23,7 +23,7 @@ const abouts = [
   {
     title: "Twitch Streamer",
     description: "I am a good Twitch Streamer.",
-    imgUrl: images.about04,
+    imgUrl: images.twitch,
   },
 ];
 
