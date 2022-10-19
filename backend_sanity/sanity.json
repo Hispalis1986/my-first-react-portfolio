@@ -4,7 +4,7 @@
     "name": "react-portfolio-22"
   },
   "api": {
-    "projectId": "k7mokk25",
+    "projectId": "agzxthfn",
     "dataset": "production"
   },
   "plugins": [
@@ -15,9 +15,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [

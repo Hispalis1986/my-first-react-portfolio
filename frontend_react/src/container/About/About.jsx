@@ -1,33 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // eslint-disable-next-line
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+
+// import { images } from "../../constants";
+import { urlFor, client } from "../../client";
 import "./About.scss";
 
-const abouts = [
-  {
-    title: "MERN Stack",
-    description: "I am a good MERN stack.",
-    imgUrl: images.mern,
-  },
-  {
-    title: "Frontend Developer",
-    description: "I am a good frontend developer.",
-    imgUrl: images.frontend,
-  },
-  {
-    title: "Backend Developer",
-    description: "I am a good backend developer.",
-    imgUrl: images.backend,
-  },
-  {
-    title: "Twitch Streamer",
-    description: "I am a good Twitch Streamer.",
-    imgUrl: images.twitch,
-  },
-];
+// const abouts = [
+//   {
+//     title: "MERN Stack",
+//     description: "I am a good MERN stack.",
+//     imgUrl: images.mern,
+//   },
+//   {
+//     title: "Frontend Developer",
+//     description: "I am a good frontend developer.",
+//     imgUrl: images.frontend,
+//   },
+//   {
+//     title: "Backend Developer",
+//     description: "I am a good backend developer.",
+//     imgUrl: images.backend,
+//   },
+//   {
+//     title: "Twitch Streamer",
+//     description: "I am a good Twitch Streamer.",
+//     imgUrl: images.twitch,
+//   },
+// ];
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client
+      .fetch(query)
+      .then((data) => {
+        setAbouts(data);
+      })
+      .catch((Error) => console.log(Error));
+  }, []);
+
   return (
     <>
       <h2 className="head-text">
@@ -44,7 +59,8 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
+
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
