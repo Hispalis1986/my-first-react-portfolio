@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // eslint-disable-next-line
 import { motion } from "framer-motion";
-
+import { AppWrap, MotionWrap } from "../../wrapper";
 // import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 import "./About.scss";
@@ -74,4 +74,8 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+);
