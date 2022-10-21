@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import { SocialMedia } from "../../components";
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Header.scss";
@@ -35,6 +36,9 @@ const Header = () => (
         <div className="tag-cmp app__flex">
           <p className="p-text">Junior Web Developer</p>
           <p className="p-text">Freelancer & Streamer</p>
+        </div>
+        <div>
+          <SocialMedia />
         </div>
       </div>
     </motion.div>

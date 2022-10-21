@@ -1,18 +1,42 @@
 import React from "react";
-import { BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaXing } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <BsTwitter />
+        <button className="none">
+          <a
+            href="https://www.linkedin.com/in/juan-carlos-royano/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsLinkedin />
+          </a>
+        </button>
       </div>
       <div>
-        <FaFacebookF />
+        <button className="none">
+          <a
+            href="https://www.xing.com/profile/JuanCarlos_RoyanoGonzalez2/cv"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXing />
+          </a>
+        </button>
       </div>
       <div>
-        <BsInstagram />
+        <button className="none">
+          <a
+            href="https://github.com/Hispalis1986"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsGithub />
+          </a>
+        </button>
       </div>
     </div>
   );

@@ -126,11 +126,11 @@
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: whitesmoke;
+      border-color: wheat;
 
       svg {
-        color: var(--white-color);
+        color: var(--black-color);
       }
     }
 
@@ -146,6 +146,11 @@
       }
     }
   }
+}
+.none {
+  background: none;
+  border: none;
+  @import url("https://www.google.com/");
 }
 
 .app__navigation {
