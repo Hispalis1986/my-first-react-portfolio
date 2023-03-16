@@ -19,7 +19,7 @@ import "./About.scss";
 //   },
 //   {
 //     title: "Backend Developer",
-//     description: "I am a good backend developer.",
+//     description: ".",
 //     imgUrl: images.backend,
 //   },
 //   {
